@@ -1,0 +1,35 @@
+Problem
+
+There is a readable (=unencrypted, access rights are given) JSON file in the file system of the robot,
+the file is located in the internal storage of the application.
+
+a) this file is to be read in
+b) parsed and converted into a processable object
+c) transfer it to QiChat so that it can be read by the robot as a dialog.
+
+to a) the file is located in the root directory of the app and is called dialog.json
+to b) the structure of the file is a list of objects containing speech inputs and outputs.
+
+Example:
+
+[
+  {
+    "input": "Hallo Pepper!",
+    "output": "Hallo Mensch!"
+  },
+  {
+    "input": "Wie alt bist Du?",
+    "output": "Ich bin 4 Jahre."
+  }
+]
+
+to c) qiChat is a text based format, the rules are as follows:
+
+* Each qiChat file starts with a naming of the topic, everything in capital letters must be named/filled accordingly by
+yourself.
+
+topic: ~NAME()
+
+This is followed by the input/output rules of the dialog, in the following form:
+u:(INPUT) OUTPUT
+

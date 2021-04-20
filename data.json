@@ -1,0 +1,10 @@
+[
+  {
+    "input": "Hallo Pepper!",
+    "output": "Hallo Mensch!"
+  },
+  {
+    "input": "Wie alt bist Du?",
+    "output": "Ich bin 4 Jahre."
+  }
+]
